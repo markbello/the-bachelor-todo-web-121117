@@ -43,7 +43,7 @@ end
 def get_average_age_for_season(data, season)
   ages = 0
   data[season].each{|key, contestant|
-    ages += contestant["age"].to_f
+    ages += contestant["age"]
     binding.pry
     }
   }
