@@ -41,10 +41,10 @@ def get_occupation(data, hometown)
 end
 
 def get_average_age_for_season(data, season)
-  ages = []
+  ages = 0
   data[season].each{|key, contestant|
-    ages.push(contestant["age"])
+    ages += contestant["age"]
     }
-  ages / data[season].keys.length
   }
+  ages / data[season].keys.length
 end
