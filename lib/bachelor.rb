@@ -45,5 +45,5 @@ def get_average_age_for_season(data, season)
   data[season].each{|contestant, value|
     ages += contestant["age"].to_f
   }
-  ages /= data[season].keys.length
+  ages /= data[season].length
 end
