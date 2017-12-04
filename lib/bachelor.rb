@@ -47,5 +47,4 @@ def get_average_age_for_season(data, season)
     binding.pry
     }
   }
-  ages / data[season].keys.length
 end
