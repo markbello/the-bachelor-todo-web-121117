@@ -1,10 +1,8 @@
 def get_first_name_of_season_winner(data, season)
-  data[season].each{|key1, value1|
-    value1.each{|key2, value2|
-      if value2["status"] = "Winner"
-        return value2["name"].split[0]
-      end
-    }
+  data[season].each{|key, value|
+    if value["status"] = "Winner"
+      return value["name"].split[0]
+    end
   }
 end
 
