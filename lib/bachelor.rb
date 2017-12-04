@@ -42,9 +42,9 @@ end
 
 def get_average_age_for_season(data, season)
   ages = 0
-  data[season].each{|key, contestant|
+  data[season].each{|contestant, value|
     # ages += contestant["age"]
     binding.pry
-    
+
   }
 end
